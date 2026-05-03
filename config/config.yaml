@@ -113,9 +113,25 @@ rss:
   # - 正整数：覆盖全局设置，只推送此天数内的文章
   # - 0：禁用此频道的新鲜度过滤，推送所有文章
   feeds:
+
+    # 自定义源bing
+    - id: "bing-search-drones"
+      name: "bing自定义源"
+      url: "https://www.bing.com/news/search?format=RSS&q=drones"
+      max_age_days: 3  
+      
+   # 自定义源bing
+    - id: "bing-search-无人机"
+      name: "bing自定义源"
+      url: "https://www.bing.com/news/search?format=RSS&q=无人机"
+      max_age_days: 3     
+
     - id: "hacker-news"
       name: "Hacker News"
       url: "https://hnrss.org/frontpage"
+      max_age_days: 3
+
+
 
     - id: "ruanyifeng"
       name: "阮一峰的网络日志"
@@ -126,7 +142,10 @@ rss:
     - id: "yahoo-finance"
       name: "雅虎财经"
       url: "https://finance.yahoo.com/news/rssindex"
+      enabled: false 
 
+
+      
     # 自定义源示例
     # - id: "custom-feed"
     #   name: "自定义源"
@@ -160,7 +179,7 @@ report:
   # 关键词模式分组排序方式（仅 keyword 模式生效）
   # true: 按 frequency_words.txt 的定义顺序排列
   # false: 按匹配到的热点条数排序（条数多的在前）
-  sort_by_position_first: false
+  sort_by_position_first: true
 
   rank_threshold: 5                   # 排名高亮阈值（影响展示强调，不改变抓取范围）
 
