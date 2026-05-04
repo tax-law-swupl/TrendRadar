@@ -120,17 +120,53 @@ rss:
       url: "https://www.bing.com/news/search?format=RSS&q=drones"
       max_age_days: 3  
       
-   # 自定义源bing
+    # 自定义源bing
     - id: "bing-search-无人机"
       name: "bing自定义源"
       url: "https://www.bing.com/news/search?format=RSS&q=无人机"
       max_age_days: 3     
+      
+    # 自定义源bing
+    - id: "bing-search-财政"
+      name: "bing自定义源"
+      url: "https://www.bing.com/news/search?format=RSS&q=财政"
+      max_age_days: 3     
+
+    # 自定义源bing
+    - id: "bing-search-税收"
+      name: "bing自定义源"
+      url: "https://www.bing.com/news/search?format=RSS&q=税收"
+      max_age_days: 3 
+
+    # 自定义源bing
+    - id: "bing-search-tax"
+      name: "bing自定义源"
+      url: "https://www.bing.com/news/search?format=RSS&q=tax"
+      max_age_days: 3 
+
+      # 自定义源bing
+    - id: "bing-search-public finance"
+      name: "bing自定义源"
+      url: "https://www.bing.com/news/search?format=RSS&q=public finance"
+      max_age_days: 3 
+
+
+
+
+
+
+
+
+
+
+
+
 
     - id: "hacker-news"
       name: "Hacker News"
       url: "https://hnrss.org/frontpage"
       max_age_days: 3
-
+      enabled: false 
 
 
     - id: "ruanyifeng"
