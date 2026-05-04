@@ -114,42 +114,72 @@ rss:
   # - 0：禁用此频道的新鲜度过滤，推送所有文章
   feeds:
 
+
+    # 谷歌新闻 top news 
+    - id: "google news-topnews"
+      name: "谷歌新闻 top news"
+      url: "https://news.google.com/rss"
+      max_age_days: 3 
+      
+    # 谷歌新闻 keywords news drone
+    - id: "google news-keywordsnews"
+      name: "谷歌新闻 keywords news-drone"
+      url: "https://news.google.com/rss/search?q=drone"
+      max_age_days: 3 
+
+    # 谷歌新闻 keywords news tax
+    - id: "google news-keywordsnews"
+      name: "谷歌新闻 keywords news-tax"
+      url: "https://news.google.com/rss/search?q=tax"
+      max_age_days: 3 
+
+
     # 自定义源bing
     - id: "bing-search-drones"
       name: "bing自定义源"
       url: "https://www.bing.com/news/search?format=RSS&q=drones"
       max_age_days: 3  
-      
+      enabled: false 
+
     # 自定义源bing
     - id: "bing-search-无人机"
       name: "bing自定义源"
       url: "https://www.bing.com/news/search?format=RSS&q=无人机"
       max_age_days: 3     
+      enabled: false 
+
       
     # 自定义源bing
     - id: "bing-search-财政"
       name: "bing自定义源"
       url: "https://www.bing.com/news/search?format=RSS&q=财政"
       max_age_days: 3     
+      enabled: false 
 
+      
     # 自定义源bing
     - id: "bing-search-税收"
       name: "bing自定义源"
       url: "https://www.bing.com/news/search?format=RSS&q=税收"
       max_age_days: 3 
+      enabled: false 
+      
 
     # 自定义源bing
     - id: "bing-search-tax"
       name: "bing自定义源"
       url: "https://www.bing.com/news/search?format=RSS&q=tax"
       max_age_days: 3 
+      enabled: false 
 
       # 自定义源bing
     - id: "bing-search-public finance"
       name: "bing自定义源"
       url: "https://www.bing.com/news/search?format=RSS&q=public finance"
       max_age_days: 3 
+      enabled: false 
 
+      
 
 
 
