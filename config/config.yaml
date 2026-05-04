@@ -122,17 +122,24 @@ rss:
       max_age_days: 3 
       
     # 谷歌新闻 keywords news drone
-    - id: "google news-keywordsnews"
+    - id: "google news-keywordsnews-drone"
       name: "谷歌新闻 keywords news-drone"
       url: "https://news.google.com/rss/search?q=drone"
       max_age_days: 3 
 
+    # 谷歌新闻 keywords news exclusive drone
+    - id: "google news-keywordsnews-exclusive drone"
+      name: "谷歌新闻 keywords news-exclusive drone"
+      url: "https://news.google.com/rss/search?q=tax"
+      max_age_days: 3 
+      
+
     # 谷歌新闻 keywords news tax
-    - id: "google news-keywordsnews"
+    - id: "google news-keywordsnews-tax"
       name: "谷歌新闻 keywords news-tax"
       url: "https://news.google.com/rss/search?q=tax"
       max_age_days: 3 
-
+      enabled: false 
 
     # 自定义源bing
     - id: "bing-search-drones"
